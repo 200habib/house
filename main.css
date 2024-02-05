@@ -1,0 +1,525 @@
+.article_1 {
+    margin-top: 50px;
+}
+
+.main_plaza_suite {
+    background-image: url(asset/main/rest/0638r\ 1.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(60%);
+    font-size: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text {
+    width: 1300px;
+    text-shadow: 0px 0px 19px rgba(0,0,0,0.88);
+}
+
+.main_text:first-child{
+    color: goldenrod;
+}
+
+.main_text span {
+    font-size: 40px;
+    color: white;
+}
+
+.main_text p {
+    font-size: 40px;
+    text-align: center;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+
+.main_text p::before {
+    content: "";
+    /* display: block; */
+    display: inline-block;
+    border-bottom: 1px solid goldenrod;
+    /* margin-bottom: 10px; */
+}
+
+/* div {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-bottom: 0;
+    transition: margin-bottom 10s;
+}
+
+div:hover {
+    margin-bottom: 50px;
+    transition: margin-bottom 5s;
+} */
+
+.main_house_sell {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 925px);
+    /* grid-template-rows: repeat(2, 700px); */
+    grid-template-rows: 850px 750px;
+    gap: 25px;
+}
+
+.main_house_sell_1 {
+    /* background-color: red; */
+    background-image: url(https://img.freepik.com/premium-photo/close-up-stock-photo-modern-homes-apartments-villa-by-emi-designs-2018_896782-11444.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+
+.mm {
+    transform: translateY(0px);
+    transition: transform 2s;
+}
+
+.mm:hover {
+    cursor: pointer;
+    transform: translateY(-25px);
+    transition: transform 2s;
+    box-shadow: 0px 10px 100px 70px rgba(231, 172, 23, 0.322);
+}
+
+.main_house_sell_1 #heart {
+    position: absolute;
+}
+
+#heart { 
+    position: absolute; 
+    width: 10px; 
+    height: 10px; 
+    transform: translate(250px, 80px);
+    animation: heart 2s infinite alternate linear;
+    transform-origin: center;
+}
+
+#heart:before, #heart:after { 
+    content: ""; 
+    position: absolute; 
+    left: 30px; 
+    top: 0;
+    right: 50px;
+    width: 30px; 
+    height: 50px; 
+    background: goldenrod; 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin: 100% 100%; 
+}
+
+@keyframes heart {
+    from {
+        transform: scale(1);
+    } 
+    to {
+        transform: scale(1.4);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_house_sell_down {
+    position: absolute;
+    transform: translate(70px,615px);
+}
+
+.main_house_sell_down_p{
+    margin-bottom: -40px;
+    
+}
+
+.main_house_sell_for_more {
+    font-size: 30px;
+    margin-top: -55px;
+}
+
+.main_house_sell_down_2  {
+    position: absolute;
+    transform: translate(70px,515px);
+}
+
+
+.main_house_sell_button {
+display: flex;
+/* justify-content: space-around; */
+align-items: center;
+position: relative;
+
+}
+                         /*  */
+
+
+
+.main_house_sell_button button:hover .square-gree {
+    animation: grow 2s infinite alternate linear;
+    display: block;
+    border-radius: 80px;
+}
+
+.main_house_sell_button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact_now {
+    position: absolute;
+}
+
+.main_house_sell_button p {
+    color: black;
+    font-size: 40px;
+}
+
+
+.main_house_sell_button button {
+    position: relative;
+}
+
+
+.contact_now {
+    position: absolute;
+}
+
+.square-gree {
+    width: 120px;
+    height: 50px;  
+    background: linear-gradient(90deg, rgba(176,148,4,1) 0%, rgba(255,255,255,1) 52%, rgba(176,148,4,1) 100%);
+    display: none;
+    border-radius: 100px;
+}
+
+@keyframes grow {
+    from {
+        transform:  scale(1);
+
+    }
+    to {
+        scale: calc(400/120);
+    }
+}
+
+.spacing {
+    margin-top: -100px;
+}
+
+                                       /*  */
+
+.square-re {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 0px 50px 50px rgba(0, 0, 0, 0);
+}
+
+.main_buttone {
+    position: relative;
+}
+
+.main_buttone:hover .square-re {
+    display: none;
+}
+
+/* .main_buttone .square-re {
+    animation: mov 4s infinite; 
+    filter: brightness(50);
+} */
+
+.square-re {
+    animation: mov 6s linear infinite;
+}
+
+:root {
+    --square-size: 20px; 
+}
+
+@keyframes mov {
+    0%, 100% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - var(--square-size));
+    }
+    50% {
+        top: calc(100% - var(--square-size));
+        left: calc(100% - var(--square-size));
+    }
+    75% {
+        top: calc(100% - var(--square-size));
+        left: 0;
+    }
+}
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_house_sell_button button{
+    height: 50px;
+    width: 400px;
+    border-radius: 80px;
+    /* border: black 1px solid; */
+    border: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 0px 100px 0px #FFAA54;
+        /* transform-origin: center; */
+    }
+
+}
+
+
+
+
+.main_house_sell_2 {
+    /* background-color: red; */
+    background-image: url(https://en.idei.club/uploads/posts/2023-03/1679178360_en-idei-club-p-japan-traditional-house-vkontakte-5.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.main_house_sell_3 {
+    /* background-color: red; */
+    background-image: url(https://png.pngtree.com/background/20230519/original/pngtree-beautiful-chinese-house-in-a-park-with-large-rocks-picture-image_2653448.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.main_house_sell_4 {
+    /* background-color: red; */
+    background-image: url(https://italiaignota.com/wp-content/uploads/2021/02/villa_lante_copertina_villa_lante_abagnaia.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.main_Ignite_Your_Dreams {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(218, 165, 32, 0.622);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_Ignite_Your_Dreams h2 {
+    font-size: 70px;
+
+}
+
+.main_Ignite_Your_Dreams p {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.main_Ignite_Your_Dreams button{
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    border: white 2px solid;
+    background-color: transparent;
+    font-size: 20px;
+    letter-spacing: 5px;
+    transform: scale(1) ;
+    transform-origin: center;
+    transition: transform 1s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_Ignite_Your_Dreams button:hover {
+    transform: scale(1.1) ;
+    transform-origin: center;
+    transition: transform 1s ease;
+}
+
+
+                                      /* kkkkkkkkkkkkkkkkkkkkkk */
+
+
+.main_Ignite_Your_Dreams button span {
+    position: absolute;
+}
+
+.square-green {
+    width: 120px;
+    height: 50px;  
+    background: linear-gradient(90deg, rgba(176,148,4,1) 0%, rgba(255,255,255,1) 52%, rgba(176,148,4,1) 100%);
+    display: none;
+    border-radius: 100px;
+}
+
+.main_Ignite_Your_Dreams button:hover .square-green {
+    animation: growth 2s infinite alternate linear;
+    display: block;
+    border-radius: 80px;
+}
+
+@keyframes growth {
+    from {
+        transform:  scale(1);
+
+    }
+    to {
+        scale: calc(500/120);
+    }
+}
+
+
+
+
+
+
+
+
+
+.flow {
+    display: flex;
+    justify-content: center;
+    /* align-items: start; */
+    height: 800px;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.main_learn_more {
+    cursor: pointer;
+    width: 700px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 40px;
+    background-color: transparent;
+    position: absolute;
+    transform: translate(20%,550px);
+    color: rgb(0, 0, 0);
+}
+
+.main_learn_more p{
+    font-size: 50px;
+    color: white;
+  }
+
+.main_article_flow {
+    background-image: url(https://media.cntraveler.com/photos/6246239e79f8935aaa2ef022/16:9/w_2560,c_limit/Moskito%20Island_Moskito%20Island%20-%20Beach%20House%20+%20Branson%20Estate.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    position: absolute;
+    transform: translateX(50%);
+    /* background-color: #FFAA54; */
+    height: 700px;
+    width:  900px;
+    animation: abib 4s linear infinite alternate;
+    display: flex;
+}
+@keyframes abib {
+    from {
+        top: calc(100% - 700px);
+
+    }
+    to {
+        top: 0%;
+    }
+}
+
+
+
+
+.main_article_flow_ {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/583860c8-47e6-4d2c-8614-6c82a5159625/dg4ijih-3e98d610-8983-4f12-8adf-16ae24c164bd.jpg/v1/fill/w_1920,h_1077,q_75,strp/futuristic_island_house_in_the_middle_of_the_ocean_by_zakazeskiz_dg4ijih-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU4Mzg2MGM4LTQ3ZTYtNGQyYy04NjE0LTZjODJhNTE1OTYyNVwvZGc0aWppaC0zZTk4ZDYxMC04OTgzLTRmMTItOGFkZi0xNmFlMjRjMTY0YmQuanBnIiwiaGVpZ2h0IjoiPD0xMDc3Iiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvNTgzODYwYzgtNDdlNi00ZDJjLTg2MTQtNmM4MmE1MTU5NjI1XC96YWthemVza2l6LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.FYz_QUCzXEXQHJBt4qaOkuqA3_YTzWpUXiOrVME8u7E);
+    background-repeat: no-repeat;
+    background-size: contain;    
+    position: absolute;
+    transform: translateX(-50%) ;
+    /* bottom: 100%; */
+    bottom: 0;
+    /* background-color: red; */
+    height: 700px;
+    width:  900px;
+    animation: abi 4s linear infinite alternate-reverse; 
+}
+
+
+
+@keyframes abi {
+    from {
+      bottom: 0;
+    }
+    to {
+         bottom: calc(100% - 700px);
+
+    }
+}
+
+

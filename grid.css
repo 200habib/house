@@ -1,0 +1,171 @@
+
+
+
+
+   /* display grid img word */
+.main_grid_img_word {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 359px);
+    grid-template-rows: repeat(3, 600px);
+    gap: 20px;
+}
+
+
+
+.img_rep {
+    cursor: pointer;
+    position: relative;
+}
+
+.main_grid_img_word_japon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: black;
+    transition: background-color 3s ease;
+}
+
+.img_rep:hover {
+    transition: filter 3s ease, background-color 3s ease;
+    filter: brightness(40%);
+    margin-bottom: 50px;
+    transition: margin-bottom 5s;
+   
+}
+
+                                              /* grid img */
+
+/* https://static.independent.co.uk/2021/09/29/12/iStock-176431489.jpg?quality=75&width=1200&auto=webp */
+
+.main_grid_img_word_italy {
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/laguna-beach-1488819793.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 600px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+        
+.main_grid_img_word_french {
+    background-image:  url(https://blog.green-acres.com/wp-content/uploads/2018/09/shutterstock_230413204.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 600px;
+    grid-column: 3/6;
+    grid-row: 1/2;
+}
+
+.main_grid_img_word_ {
+    background-image:  url(https://c1.wallpaperflare.com/preview/267/792/934/596c85a0d63b1.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 600px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.main_grid_img_word_building {
+    background-image:  url(https://c4.wallpaperflare.com/wallpaper/807/690/340/architecture-building-city-cityscape-wallpaper-preview.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 600px;
+    grid-column: 4/6;
+    grid-row: 2/3;
+}
+
+:root {
+    --square-size: 20px;
+}
+
+@keyframes move {
+    0%, 100% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - var(--square-size));
+    }
+    50% {
+        top: calc(100% - var(--square-size));
+        left: calc(100% - var(--square-size));
+    }
+    75% {
+        top: calc(100% - var(--square-size));
+        left: 0;
+    }
+}
+
+.main_grid_img_word_japon {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/965/284/998/architecture-ancient-history-building-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+}
+
+.main_container_grid_img_word_japon_text {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0);
+    /* background-color: red; */
+    overflow: hidden; 
+}
+
+.main_grid_img_word_japon_text p {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s ease;
+    border-bottom: -10pxpx solid transparent;
+    padding-bottom: 2px; 
+    transition: border-bottom 1s, padding-bottom 1s, transform 1s; 
+}
+
+.main_grid_img_word_japon_text p:hover {
+    transform: scale(1.07);
+    transition: transform 2s ease;
+    border-bottom: 4px solid; 
+    padding-bottom: 10px;
+}
+
+.square-red {
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 0px 50px 50px rgba(0, 0, 0, 0);
+}
+
+.main_grid_img_word_japon_text:hover .square-red {
+    animation: move 4s infinite; 
+    filter: brightness(50);
+}
+
+
+
+
+
+
+.main_grid_img_word_ii {
+    background-image:  url(https://c4.wallpaperflare.com/wallpaper/180/498/372/sydney-australia-sydney-opera-house-city-wallpaper-preview.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 600px;
+    grid-column: 3/6;
+    grid-row: 3/4;
+    position: relative;
+}
